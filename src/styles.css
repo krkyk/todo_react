@@ -9,6 +9,10 @@ input {
   padding: 6px 16px;
 }
 
+input:focus {
+  outline: 2px solid #a0d8ef;
+}
+
 button {
   border-radius: 16px;
   border: none;
