@@ -2,38 +2,3 @@
   font-family: sans-serif;
   text-align: center;
 }
-
-input {
-  border-radius: 16px;
-  border: none;
-  padding: 6px 16px;
-}
-
-input:focus {
-  outline: 2px solid #a0d8ef;
-}
-
-button {
-  border-radius: 16px;
-  border: none;
-  padding: 4px 16px;
-  background-color: #e6e6fa;
-  margin-left: 3px;
-}
-
-button:hover {
-  background-color: cornflowerblue;
-  color: white;
-  cursor: pointer;
-}
-
-.title {
-  text-align: center;
-  margin-top: 0;
-  font-weight: bold;
-  color: #524e4d;
-}
-
-.list-row {
-  padding-bottom: 4px;
-}
