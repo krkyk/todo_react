@@ -5,49 +5,23 @@ import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-
-const paperStyle = {
-  backgroundColor: "#87cefa",
-  width: "400px",
-  minHeight: "200px",
-  padding: "8px",
-  margin: "8px",
-  borderRadius: "8px"
-};
-
-const cardStyle = {
-  display: "flex",
-  margin: "0 10px 10px 10px"
-};
-
-const btnStyle = {
-  borderRadius: "16px",
-  padding: " 4px 16px",
-  backgroundColor: "#38a1db"
-};
-
-const titleStyle = {
-  textAlign: "center",
-  marginTop: 0,
-  fontWeight: "bold",
-  color: "#524e4d"
-};
+import styles from "./CompleteTodos.module.scss";
 
 export const CompleteTodos = (props) => {
   const { todos, onClickBack } = props;
   return (
-    <Paper elevation={3} style={paperStyle}>
-      <Typography style={titleStyle}>完了したTODO</Typography>
+    <Paper elevation={3} className={styles.paper}>
+      <Typography className={styles.title}>完了したTODO</Typography>
       {todos.map((todo, index) => {
         return (
-          <Card key={todo} style={cardStyle}>
+          <Card key={todo} className={styles.card}>
             <CardContent>{todo}</CardContent>
             <CardActions>
               <Button
                 size="small"
                 variant="contained"
                 onClick={() => onClickBack(index)}
-                style={btnStyle}
+                className={styles.btn}
               >
                 戻す
               </Button>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./styles.css";
+import "./styles.scss";
 import { InputTodo } from "./components/InputTodo";
 import { IncompleteTodos } from "./components/IncompleteTodos";
 import { CompleteTodos } from "./components/CompleteTodos";

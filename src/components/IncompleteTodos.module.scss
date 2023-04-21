@@ -1,0 +1,29 @@
+.paper{
+  background-color: #ffc0cb;
+  width: 400px;
+  min-height: 200px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.card{
+  display: flex;
+  margin: 0 10px 10px 10px;
+}
+
+.btn{
+  border-radius: 16px;
+  padding: 4px 16px;
+  background-color: #f09199;
+  &:hover{
+    background-color:#e95464;
+  }
+}
+
+.title{
+  text-align: center;
+  margin-top: 0;
+  font-weight: bold;
+  color: #524e4d;
+}
